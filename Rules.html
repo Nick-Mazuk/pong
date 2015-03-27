@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="rules.css">
+        <script src="rules.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        <title>Nick Mazuk - Pong Rules</title>
+    </head>
+    <body>
+        <div class="header">Pong</div>
+        <div class="main">
+            
+            <h1>Rules</h1>
+            <h2>Gameplay</h2>
+            
+            <p>Get the ball past your opponent's paddle to score points. The ball will bounce off the paddles and the walls. To prevent the opponent from scoring, move your paddle with the left and right arrow keys to deflect the ball.</p>
+            
+            <p>Each round will start with the ball in the middle of the board. It will drop towards the player's paddle. The player must deflect the ball and bounce it to their opponent who will deflect it back.</p>
+            
+            <p>If at any point in the round either player misses a shot, the other player scored a goal and the next round will start.</p>
+            
+            <canvas id="gameplay"></canvas>
+            
+            <h2>Scoring</h2>
+            
+            <p>You will gain 100 points each time you deflect the ball successfully. Each time you score a goal, you will gain 1000 points. Each time your opponent scores a goal, you will loose 1000 points.</p>
+            
+            <p>However, you will not loose points for missing the first ball of each round.</p>
+            
+            <canvas id="deflect"></canvas>
+            <canvas id="win"></canvas>
+            <canvas id="lose"></canvas>
+            <canvas id="miss"></canvas>
+            
+            <h2>Levels</h2>
+            
+            <p>Every 3000 points, you will advance one level. Each level brings with it new difficulties and challenges.</p>
+            
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Computer</th>
+                    <th>Paddle Speed</th>
+                    <th>Ball Speed</th>
+                </tr>
+                <tr>
+                    <td>1-5</td>
+                    <td>Follows the ball. Increased reaction time as levels progress.</td>
+                    <td>Increases with each level</td>
+                    <td>Increases every three levels</td>
+                </tr>
+                <tr>
+                    <td>5-50</td>
+                    <td>Accurately predicts where the ball will end up.</td>
+                    <td>Increases every four levels, but computer is significantly slower.</td>
+                    <td>Increases every five levels</td>
+                </tr>
+                <tr>
+                    <td>Above 50</td>
+                    <td>Computer gets significantly faster and has increased reaction time</td>
+                    <td>Continues to increase every four levels</td>
+                    <td>Stays at a constant, but fast, rate</td>
+                </tr>
+            </table>
+            
+            <div class="footer">
+                <a href="/Coding/Pong.html">Back</a>
+            </div>
+        </div>
+    </body>
+</html>
