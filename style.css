@@ -1,0 +1,59 @@
+body {
+    background-color:#000000;
+    color:#FFFFFF;
+    font-family: 'Press Start 2P', 'Open Sans', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+canvas {
+    border:1px solid #FFFFFF;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:70px;
+    z-index:2;
+}
+
+.header {
+    font-size:48px;
+    text-align:center;
+    margin-bottom:18px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:10;
+}
+
+.scores {
+    position:absolute;
+    left:10%;
+    z-index:1;
+    top:270px;
+}
+
+.scores h1, .scores p {
+    font-size:18px;
+}
+
+a {
+    color:#FFFFFF;
+    font-size:12px;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#0000FF;
+}
+
+::selection {
+	background: #000000;
+}
+
+::-moz-selection {
+	background: #000000;
+}
